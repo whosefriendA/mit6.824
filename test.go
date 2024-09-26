@@ -4,10 +4,17 @@ import (
 	"fmt"
 )
 
+func main() {
+	m = make(map[string]Vertex)
+	m["Bell Labs"] = Vertex{
+		40.68433, -74.39967,
+	}
+	fmt.Println(m["Bell Labs"])
+}
 // func main() {
 // 	fmt.Println("helloworld")
 // 	for i:=0; i<5; i++{
-		
+
 // 	}
 // }
 // func main() {
@@ -42,4 +49,15 @@ import (
 // 	p = &j         // 指向 j
 // 	*p = *p / 37   // 通过指针对 j 进行除法运算
 // 	fmt.Println(j) // 查看 j 的值
+// }
+// func main(){
+// 	var a []int = []int{1,2,3,4}
+// 	var b []int = a[1:2]
+// 	fmt.Print(a)
+// 	fmt.Print(b)
+// }
+// func main(){
+// 	a:=make([]int,0,5)
+// 	b:=make([]int ,3,4)
+// 	fmt.Println(a,b)
 // }
