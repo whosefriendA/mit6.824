@@ -25,6 +25,7 @@ import (
 		}
 		return result
 	}
+	
 func main() {
 	pic.Show(Pic)
 }
