@@ -1,16 +1,16 @@
-package main
+// package main
 
-import (
-	"fmt"
-)
+// import (
+// 	"fmt"
+// )
 
-func main() {
-	m = make(map[string]Vertex)
-	m["Bell Labs"] = Vertex{
-		40.68433, -74.39967,
-	}
-	fmt.Println(m["Bell Labs"])
-}
+// func main() {
+// 	var m = make(map[string]Vertex)
+// 	m["Bell Labs"] = Vertex{
+// 		40.68433, -74.39967,
+// 	}
+// 	fmt.Println(m["Bell Labs"])
+// }
 // func main() {
 // 	fmt.Println("helloworld")
 // 	for i:=0; i<5; i++{
@@ -40,7 +40,6 @@ func main() {
 // }
 // func main() {
 // 	i, j := 42, 2701
-
 // 	p := &i         // 指向 i
 // 	fmt.Println(*p) // 通过指针读取 i 的值
 // 	*p = 21         // 通过指针设置 i 的值
@@ -61,3 +60,22 @@ func main() {
 // 	b:=make([]int ,3,4)
 // 	fmt.Println(a,b)
 // }
+package main
+
+import ("fmt")
+
+func main(){
+	a :=[4]int{
+		1,2,3,4,
+	}
+	b:=a[1:2]
+	c:=a[:1]
+	d:=a[:3]
+	fmt.Println(b)
+	fmt.Println(c)
+	fmt.Println(d)
+	for i,v :=range(a){
+		fmt.Println(i)
+		fmt.Println(v)
+	}
+}
